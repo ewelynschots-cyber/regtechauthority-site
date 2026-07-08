@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contato / Demo – RegTech Authority</title>
+  <meta name="description" content="Entre em contato com a RegTech Authority para agendar demonstrações, pilotos e esclarecer dúvidas sobre KYC contínuo, PLD/FT e LGPD por design." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">RA</span>
+        <span class="brand-text">
+          <span class="brand-title">RegTech Authority</span>
+          <span class="brand-subtitle">KYC & KYB contínuos · trilha forense</span>
+        </span>
+      </a>
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="plataforma.html">Plataforma</a></li>
+          <li><a href="solucoes.html">Soluções</a></li>
+          <li><a href="compliance-seguranca.html">Compliance & Segurança</a></li>
+          <li><a href="treinamentos.html">Treinamentos</a></li>
+          <li><a href="conteudo.html">Conteúdo</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html" class="active">Contato / Demo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO CONTATO -->
+    <section class="hero hero-subpage">
+      <div class="container">
+        <h1>Contato e agendamento de demonstração</h1>
+        <p>
+          Utilize o formulário abaixo ou fale diretamente pelos canais oficiais
+          para agendar uma demonstração, participar do programa de pilotos ou tirar dúvidas técnicas.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTATOS DIRETOS -->
+    <section class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Contatos oficiais</h2>
+          <p>Você pode falar com a RegTech Authority pelos canais abaixo:</p>
+
+          <div class="card">
+            <h3>E-mail</h3>
+            <p>
+              <strong>Geral / Comercial:</strong><br />
+              <a href="mailto:contato@regtechauthority.com.br">
+                contato@regtechauthority.com.br
+              </a>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Telefones</h3>
+            <p>
+              <strong>Rio de Janeiro (21):</strong><br />
+              <a href="tel:+5521982284901">
+                21&nbsp;98228&nbsp;4901
+              </a>
+            </p>
+            <p>
+              <strong>Brasília (61):</strong><br />
+              <a href="tel:+5561995156186">
+                61&nbsp;99515&nbsp;6186
+              </a>
+            </p>
+            <p class="hero-microcopy">
+              Em dispositivos móveis, tocar nos números acima inicia a ligação automaticamente.<sources>[1,2]</sources>
+            </p>
+          </div>
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div>
+          <h2>Formulário para demo e pilotos</h2>
+          <p>
+            Preencha o formulário para que nosso time entre em contato e
+            combine horário, escopo e formato da demonstração.
+          </p>
+
+          <form class="contact-form" method="post" action="#">
+            <label for="nome">
+              Nome completo
+              <input type="text" id="nome" name="nome" required />
+            </label>
+
+            <label for="email">
+              E-mail corporativo
+              <input type="email" id="email" name="email" required />
+            </label>
+
+            <label for="telefone">
+              Telefone (com DDD)
+              <input type="tel" id="telefone" name="telefone" placeholder="Ex.: (21) 98228-4901" />
+            </label>
+
+            <label for="empresa">
+              Empresa
+              <input type="text" id="empresa" name="empresa" required />
+            </label>
+
+            <label for="cargo">
+              Cargo
+              <input type="text" id="cargo" name="cargo" />
+            </label>
+
+            <label for="segmento">
+              Segmento da instituição
+              <select id="segmento" name="segmento" required>
+                <option value="">Selecione</option>
+                <option value="fintech">Fintech / Banco digital</option>
+                <option value="banco">Banco tradicional</option>
+                <option value="securitizadora">Imobiliária / Securitizadora</option>
+                <option value="gestora">Gestora / Asset management</option>
+                <option value="cripto">Corretora de cripto</option>
+                <option value="outro">Outro (especificar na mensagem)</option>
+              </select>
+            </label>
+
+            <label for="mensagem">
+              Contexto e objetivo da demonstração
+              <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            </label>
+
+            <div class="checkbox">
+              <input type="checkbox" id="lgpd" name="lgpd" required />
+              <label for="lgpd">
+                Li e concordo com a
+                <a href="privacidade.html">Política de Privacidade</a>
+                e autorizo o contato para fins de demonstração da plataforma.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar pedido de demonstração</button>
+          </form>
+
+          <p class="hero-microcopy">
+            Este formulário é um protótipo estático. Em produção, configure o envio para seu e-mail
+            ou integração com CRM (ex.: HubSpot, Pipedrive).
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>&copy; RegTech Authority – KYC e KYB contínuos com trilha de evidência forense.</p>
+      </div>
+      <div class="footer-right">
+        <a href="faq-juridico.html">FAQ jurídico</a>
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="termos.html">Termos de Uso</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
