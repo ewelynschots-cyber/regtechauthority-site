@@ -1,12 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const navToggle = document.querySelector('.nav-toggle');
-  const navList = document.querySelector('.nav-list');
+// assets/js/main.js
 
-  if (navToggle && navList) {
-    navToggle.addEventListener('click', () => {
-      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', String(!expanded));
-      navList.classList.toggle('show');
-    });
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  // Ponto central para comportamentos futuros da interface.
+  // Mantido mínimo para evitar ruído e garantir estabilidade.
+  console.log('RegTech Authority – main.js carregado');
 });

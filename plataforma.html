@@ -1,160 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Plataforma – RegTech Authority</title>
-  <meta name="description" content="Plataforma RegTech Authority: KYC e KYB contínuos, trilha de evidência forense, IA human-in-the-loop e LGPD por design." />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Visão geral da plataforma RegTech Authority para monitoramento regulatório, segurança da informação e perícia digital." />
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
+<body id="top">
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">
-        <span class="brand-mark">RA</span>
-        <span class="brand-text">
+        <img src="assets/images/logo.png" alt="RegTech Authority" class="brand-logo" />
+        <div class="brand-text">
           <span class="brand-title">RegTech Authority</span>
-          <span class="brand-subtitle">KYC & KYB contínuos · trilha forense</span>
-        </span>
+          <span class="brand-subtitle">Segurança regulatória inteligente</span>
+        </div>
       </a>
+
       <nav class="main-nav">
-        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="plataforma.html" class="active">Plataforma</a></li>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="plataforma.html" class="nav-active">Plataforma</a></li>
           <li><a href="solucoes.html">Soluções</a></li>
-          <li><a href="compliance-seguranca.html">Compliance & Segurança</a></li>
           <li><a href="treinamentos.html">Treinamentos</a></li>
           <li><a href="conteudo.html">Conteúdo</a></li>
           <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="contato.html">Contato / Demo</a></li>
+          <li><a href="contato.html" class="nav-cta">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero hero-subpage">
-      <div class="container">
-        <h1>Plataforma de KYC e KYB contínuos com trilha de evidência forense</h1>
-        <p>
-          Uma única plataforma SaaS para KYC e KYB contínuos, due diligence assistida por IA
-          e trilha de evidência forense baseada em hash chain por tenant, com LGPD por design.
-        </p>
-      </div>
-    </section>
-
     <section class="section">
-      <div class="container grid-2">
-        <div>
-          <h2>KYC & KYB contínuos</h2>
-          <p>
-            Monitoramento contínuo de pessoas físicas (KYC) e jurídicas (KYB),
-            combinando fontes oficiais, cadastros e OSINT sob contrato.
-            Cada evento relevante gera uma entrada na trilha de evidência, vinculada ao cliente.
-          </p>
-          <ul class="checklist">
-            <li>Onboarding de PF e PJ com validação documental assistida por IA</li>
-            <li>Monitoramento em tempo quase real de listas restritivas e sanções</li>
-            <li>Atualização periódica de cadastros e beneficiários finais (UBO)</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Trilha de evidência forense</h2>
-          <p>
-            Toda ação relevante é registrada em log append-only com hash chain por tenant,
-            permitindo verificação independente por peritos em auditorias internas e externas.
-          </p>
-          <ul class="checklist">
-            <li>Log imutável, com encadeamento de hashes por evento</li>
-            <li>Separação por tenant para garantir isolamento e residência de dados</li>
-            <li>Exportação de trilha para auditor externo de forma controlada</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container grid-2">
-        <div>
-          <h2>IA que narra, humano que decide</h2>
-          <p>
-            A IA generativa auxilia na redação de relatórios de CDD/EDD, mas toda saída vem com
-            disclaimers, indicação de fonte e selo de “revisado por humano”.
-          </p>
-          <ul class="checklist">
-            <li>Modelo sugere redação e estrutura de relatório</li>
-            <li>Analista do cliente sempre revisa e aprova a versão final</li>
-            <li>Registro explícito de quem aprovou cada relatório</li>
-          </ul>
-        </div>
-        <div>
-          <h2>LGPD por design</h2>
-          <p>
-            Cada feature é implementada com base legal mapeada, RIPD quando aplicável
-            e mecanismos de DSAR (Data Subject Access Request) self-service.
-          </p>
-          <ul class="checklist">
-            <li>Base legal registrada para cada fluxo de tratamento</li>
-            <li>Consentimento granular, com histórico e trilha</li>
-            <li>Portal para titulares exercerem seus direitos (DSAR)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container grid-2">
-        <div>
-          <h2>Integração enterprise</h2>
-          <p>
-            Arquitetura pensada para bancos, fintechs e grandes instituições:
-            APIs REST, autenticação corporativa e residência de dados em território nacional.
-          </p>
-          <ul class="checklist">
-            <li>API REST com autenticação OAuth2 ou token por cliente</li>
-            <li>SSO via SAML/OIDC para times de compliance</li>
-            <li>Banco de dados com RLS (Row-Level Security) por tenant</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Roadmap público</h2>
-          <p>
-            Evolução planejada em fases, incluindo certificação ISO 27001 e ampliação de fontes oficiais
-            e parceiras contratadas.
-          </p>
-          <ul class="checklist">
-            <li>Fase 1–2: foco em fintechs e bancos digitais</li>
-            <li>Fase 3: integração com Big Four e parceiros GRC</li>
-            <li>Fase 4: certificação ISO 27001 e expansão internacional</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-cta">
       <div class="container">
-        <h2>Veja a plataforma em ação</h2>
+        <h1>Plataforma RegTech Authority</h1>
         <p>
-          Agende uma demonstração guiada para entender como a RegTech Authority se conecta
-          ao seu stack atual de onboarding, monitoramento e auditoria.
+          A plataforma organiza dados regulatórios, sinais de segurança e evidências digitais em fluxos de trabalho
+          claros, permitindo decisões rápidas e fundamentadas.
         </p>
-        <a href="contato.html" class="btn btn-primary">Agendar demo técnica</a>
-        <a href="solucoes.html" class="btn btn-secondary">Explorar soluções por segmento</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-left">
-        <p>&copy; RegTech Authority – KYC e KYB contínuos com trilha de evidência forense.</p>
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="RegTech Authority" class="footer-logo" />
+        <p class="footer-note">
+          RegTech Authority – conformidade, segurança da informação e perícia digital.
+        </p>
       </div>
-      <div class="footer-right">
+      <div class="footer-links">
+        <a href="privacidade.html">Política de privacidade</a>
         <a href="faq-juridico.html">FAQ jurídico</a>
-        <a href="privacidade.html">Política de Privacidade</a>
-        <a href="termos.html">Termos de Uso</a>
-        <a href="contato.html">Contato</a>
       </div>
     </div>
   </footer>
